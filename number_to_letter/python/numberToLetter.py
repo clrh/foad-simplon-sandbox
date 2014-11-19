@@ -9,5 +9,9 @@ class TestLags(unittest.TestCase):
     def test_1_done_un(self):
         self.assertEqual(numberToLetter(1), "un")
 
+def numberToLetter(number):
+    values = {1: "un"}
+    return values[number]
+
 if __name__ == '__main__':
         unittest.main()
