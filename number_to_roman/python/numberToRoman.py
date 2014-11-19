@@ -10,6 +10,9 @@ class TestLags(unittest.TestCase):
 	self.assertEqual(numberToRoman(1),"I")
     def test_2_donne_II(self):
 	self.assertEqual(numberToRoman(2),"II")
+    def test_10_donne_XX(self):
+	self.assertEqual(numberToRoman(10),"X")
+
 
 def numberToRoman(number):
 	return number * "I"
