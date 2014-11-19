@@ -16,6 +16,8 @@ class TestLags(unittest.TestCase):
         self.assertEqual(numberToLetter(18), "dix-huit")
     def test_19_done_dixneuf(self):
         self.assertEqual(numberToLetter(19), "dix-neuf")
+    def test_23_done_vingttrois(self):
+        self.assertEqual(numberToLetter(23), "vingt-trois")
 
 def numberToLetter(number):
     values = {
@@ -29,9 +31,12 @@ def numberToLetter(number):
             8:  "huit",
             9:  "neuf",
             10: "dix",
+            20: "vingt",
             }
     if number >= 17 and number <= 19:
         return values[10] + "-" + values[number - 10]
+    if number > 20:
+        return values[20] + "-" + values[number - 20]
 
     return values[number]
 
