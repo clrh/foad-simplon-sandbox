@@ -30,8 +30,8 @@ def numberToLetter(number):
             9:  "neuf",
             10: "dix",
             }
-    if number == 17:
-        return values[10] + "-" + values[7]
+    if number >= 17 and number <= 19:
+        return values[10] + "-" + values[number - 10]
 
     return values[number]
 
