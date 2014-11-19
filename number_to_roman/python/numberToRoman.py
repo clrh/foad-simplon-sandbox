@@ -12,10 +12,7 @@ class TestLags(unittest.TestCase):
 	self.assertEqual(numberToRoman(2),"II")
 
 def numberToRoman(number):
-	if number == 1:
-		return "I"
-	if number == 2:
-		return "II"
+	return number * "I"
 
 if __name__ == '__main__':
         unittest.main()
