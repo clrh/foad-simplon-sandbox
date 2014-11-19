@@ -18,6 +18,8 @@ class TestLags(unittest.TestCase):
         self.assertEqual(numberToLetter(19), "dix-neuf")
     def test_23_done_vingttrois(self):
         self.assertEqual(numberToLetter(23), "vingt-trois")
+    def test_20_done_vingt(self):
+        self.assertEqual(numberToLetter(20), "vingt")
 
 def numberToLetter(number):
     values = {
