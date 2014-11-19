@@ -8,10 +8,14 @@ class TestLags(unittest.TestCase):
         self.assertEqual(True, True)
     def test_1_donne_I(self):
 	self.assertEqual(numberToRoman(1),"I")
+    def test_2_donne_II(self):
+	self.assertEqual(numberToRoman(2),"II")
 
 def numberToRoman(number):
 	if number == 1:
 		return "I"
+	if number == 2:
+		return "II"
 
 if __name__ == '__main__':
         unittest.main()
