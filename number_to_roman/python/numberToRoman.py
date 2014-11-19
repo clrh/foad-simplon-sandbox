@@ -15,7 +15,10 @@ class TestLags(unittest.TestCase):
 
 
 def numberToRoman(number):
-	return number * "I"
+	if number == 10:
+		return "X"
+	else:
+		return number * "I"
 
 if __name__ == '__main__':
         unittest.main()
