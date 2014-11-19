@@ -20,12 +20,10 @@ class TestLags(unittest.TestCase):
         self.assertEqual(9,lags(demandes))
 
 def lags(demandes):
-    print len(demandes)
-    if len(demandes) == 0:
+    if demandes == []:
         return 0
     else:
         return demandes[0][2]
-    return len(demandes)
 
 if __name__ == '__main__':
         unittest.main()
