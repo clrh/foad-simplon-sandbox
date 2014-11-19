@@ -26,6 +26,9 @@ def numberToLetter(number):
             9:  "neuf",
             10: "dix",
             }
+    if number == 17:
+        return values[10] + "-" + values[7]
+
     return values[number]
 
 if __name__ == '__main__':
