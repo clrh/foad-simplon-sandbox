@@ -8,9 +8,13 @@ class TestLags(unittest.TestCase):
         self.assertEqual(True, True)
     def test_1_done_un(self):
         self.assertEqual(numberToLetter(1), "un")
+    def test_2_done_deux(self):
+        self.assertEqual(numberToLetter(2), "deux")
 
 def numberToLetter(number):
-    values = {1: "un"}
+    values = {1: "un",
+            2: "deux",
+            }
     return values[number]
 
 if __name__ == '__main__':
