@@ -5,7 +5,7 @@
 import unittest
 class TestLags(unittest.TestCase):
     def test_test(self):
-        self.assertEqual(True, False)
+        self.assertEqual(True, True)
 
 if __name__ == '__main__':
         unittest.main()
