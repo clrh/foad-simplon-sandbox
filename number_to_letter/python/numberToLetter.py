@@ -6,6 +6,8 @@ import unittest
 class TestLags(unittest.TestCase):
     def test_test(self):
         self.assertEqual(True, True)
+    def test_1_done_un(self):
+        self.assertEqual(numberToLetter(1), "un")
 
 if __name__ == '__main__':
         unittest.main()
