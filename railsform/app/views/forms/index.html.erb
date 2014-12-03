@@ -14,3 +14,10 @@
     <%= f.submit %>
   </p>
 <% end %>
+<h2>List</h2>
+ 
+<% @forms.each do |r| %>
+  <ul>
+    <li><%= r.title %> ::</li>
+  </ul>
+<% end %>
