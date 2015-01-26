@@ -11,6 +11,8 @@ class TestFibo < Minitest::Test
 		assert_equal 2, fibo(2)
 		assert_equal 3, fibo(3)
 		assert_equal 5, fibo(4)
+		assert_equal 8, fibo(5)
+		assert_equal 13, fibo(6)
 	end
 
 end
@@ -22,16 +24,14 @@ def fibo(chiffre)
 		return 1
 	elsif chiffre == 1
 		return 1
-	elsif chiffre == 2
-		return 2
 	end
 
     a = 1
     b = 1
     c = 2
-    i = 3
+    i = 2
 
-    while i <= chiffre do
+    while i < chiffre do
     	a = b
     	b = c
     	c = a + b
