@@ -31,7 +31,7 @@ def fibo(chiffre)
     c = 2
     i = 3
 
-    while i < chiffre  + 1 do
+    while i <= chiffre do
     	a = b
     	b = c
     	c = a + b
