@@ -4,12 +4,13 @@ main = runTestTT (
 	test [
 	fibonacci 1 ~=? 1,
 	fibonacci 2 ~=? 1,
-	fibonacci 3 ~=? 2
+	fibonacci 3 ~=? 2,
+	fibonacci 4 ~=? 5
 	])
 
-fibonacci 1 = 1
-fibonacci 2 = 1
-fibonacci 3 = 2
+
+fibonacci(n) = fibonacci(n-1)+fibonacci(n-2)
+
 
 -- Paquets cabal-install haskell-platform ghs
 -- apt-get install cabal-install; cabal update; cabal install; cabal install hunit
